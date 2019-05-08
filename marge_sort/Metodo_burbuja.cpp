@@ -12,7 +12,6 @@ void bubble_sort(int *A, int n)
 			
 			if(*(A+j) > *(A+j+1))
 			{
-				
 				aux = *(A+j);
 				*(A+j) = *(A+j+1);
 				*(A+j+1) = aux;
@@ -24,23 +23,21 @@ void bubble_sort(int *A, int n)
 
 int main ()
 {
-	int n; //numero de elementos del array
+	int n; 
 	int *A;
-	cout<<"Digite el numero de elementos: ";
+	cout<<"Ingrese el numero de elementos: ";
 	cin>>n;
 	
 	A = new int[n];
 	
-	//entra elementos del array
 	for(int i=0;i<n;i++)
 	{
-		cout<<"Digite un numero ["<<i<<"]: ";
+		cout<<"Ingrese un numero ["<<i<<"]: ";
 		cin>>*(A+i);
 	}
 				
 	bubble_sort(A,n);
-				
-	//Imprime los elementos ordenados del array			
+							
 	for(int i=0;i<n;i++)
 	{
 		cout<<*(A+i)<<" ";
