@@ -2,8 +2,9 @@
 #define TRIANGLE_H
 
 
-#include "figure.h"
-#include "point.h"
+#include "Figure.h"
+#include "Point.h"
+#include <QPointF>
 
 class Triangle : public Figure
 {
