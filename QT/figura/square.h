@@ -1,8 +1,8 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-#include "figure.h"
-#include "point.h"
+#include "Figure.h"
+#include "Point.h"
 #include <vector>
 
 using namespace std;
