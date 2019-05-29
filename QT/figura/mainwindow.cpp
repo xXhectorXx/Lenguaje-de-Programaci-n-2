@@ -76,8 +76,4 @@ void MainWindow::on_P_Triangle_clicked()
     ui->label->setPixmap(*pixmap);
 }
 
-void MainWindow::on_Draw_all_clicked()
-{
-
-}
 
