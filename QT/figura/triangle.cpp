@@ -13,7 +13,13 @@ Triangle::~Triangle()
 
 void Triangle::draw(QPainter * painter)
 {
+   /* static const QPoint points[3] = {
+        QPoint(posx,posy),
+        QPoint(posx-height/2, posy-height),
+        QPoint(posx+height/2, posy-height),
+    };
 
+    painter->drawPolygon(points,3);*/
     painter->drawLine(posx,posy,posx-height/2, posy+height);
     painter->drawLine(posx-height/2, posy+height,posx+height/2, posy+height);
     painter->drawLine(posx+height/2, posy+height,posx,posy);
