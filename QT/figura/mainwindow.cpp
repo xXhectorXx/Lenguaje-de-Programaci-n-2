@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    pixmap = new QPixmap(200, 200);
+    pixmap = new QPixmap(600, 400);
     pixmap->fill();
 
     pen = new QPen(QColor("black"));
@@ -28,11 +28,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::draw_circle(QPainter * painter)
 {
-    shapes.push_back(new Circle("red",rand() % 100,rand() % 500,rand() % 400));
-   /* for(Figure * s:shapes)
+    shapes.push_back(new Circle("red",rand() % 100,rand() % 200,rand() % 400));
+    for(Figure * s:shapes)
     {
         s->draw(painter);
-    }*/
+    }
 
 }
 
@@ -47,9 +47,9 @@ void MainWindow::on_P_Circle_clicked()
 
 void MainWindow::draw_square(QPainter * painter)
 {
-    shapes.push_back(new Square("yellow",rand() % 100,rand() % 400,rand() % 400));
-    /*for(Figure * s:shapes)
-        s->draw(painter);*/
+    shapes.push_back(new Square("yellow",rand() % 100,rand() % 200,rand() % 400));
+    for(Figure * s:shapes)
+        s->draw(painter);
 }
 void MainWindow::on_P_Square_clicked()
 {
@@ -62,9 +62,9 @@ void MainWindow::on_P_Square_clicked()
 
 void MainWindow::draw_triangle(QPainter * painter)
 {
-    shapes.push_back(new Triangle(rand() % 100,rand() % 400,rand() % 400));
-    /*for(Figure * s:shapes)
-        s->draw(painter);*/
+    shapes.push_back(new Triangle(rand() % 100,rand() % 200,rand() % 400));
+    for(Figure * s:shapes)
+        s->draw(painter);
 }
 
 void MainWindow::on_P_Triangle_clicked()
@@ -78,12 +78,6 @@ void MainWindow::on_P_Triangle_clicked()
 
 void MainWindow::on_Draw_all_clicked()
 {
-    pixmap->fill();
-     for(Figure * s:shapes)
-     {
-         s->draw(painter);
-     }
-     ui->label->setPixmap(*pixmap);
 
 }
 
