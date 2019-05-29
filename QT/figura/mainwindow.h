@@ -8,6 +8,8 @@
 #include <QPixmap>
 #include <QPen>
 #include <QString>
+#include <QPoint>
+#include <QRectF>
 
 #include <iostream>
 
