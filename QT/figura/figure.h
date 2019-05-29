@@ -14,7 +14,7 @@
 #include <QPixmap>
 #include <QPen>
 #include <QString>
-
+#include <QPoint>
 
 using namespace std;
 
@@ -26,7 +26,7 @@ class Figure
     public:
     Figure(string p_color = "black");
     virtual ~Figure()=0;
-    virtual void draw(QPainter * painter) = 0;
+    void virtual draw(QPainter * painter) = 0;
 
 };
 
